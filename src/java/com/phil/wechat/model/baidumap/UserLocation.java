@@ -8,5 +8,6 @@ import com.phil.common.entity.UserLoacation;
  *
  */
 public class UserLocation extends UserLoacation {
+	
 
 }

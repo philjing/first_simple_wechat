@@ -122,8 +122,7 @@ public class HttpRequestUtil {
             String str = null;
             while((str = bufferedReader.readLine()) != null){
                 buffer.append(str);
-            }
-            
+            }         
             //释放资源
             bufferedReader.close();
             inputStreamReader.close();
@@ -183,16 +182,12 @@ public class HttpRequestUtil {
             inputStream=null;
             conn.disconnect();
             jsonObject = JSONObject.fromObject(buffer.toString());        
-        } catch (ConnectException e) {
-            e.printStackTrace();
-            logger.info("连接超时: "+e.getMessage());
         } catch (Exception e) {
-            e.printStackTrace();
-            logger.info("请求异常: "+e.getMessage());
-        } 
-        return jsonObject;
-        
-        
+            //e.printStackTrace();
+        	logger.info("请求异常: "+e.getMessage()); 
+			//throw e;
+        }        
+        return jsonObject;  
     }       
 
 }

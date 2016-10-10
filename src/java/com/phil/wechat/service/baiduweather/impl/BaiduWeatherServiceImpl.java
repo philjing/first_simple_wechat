@@ -27,7 +27,7 @@ public class BaiduWeatherServiceImpl implements BaiduWeatherService {
     private static Logger logger = Logger.getLogger(BaiduWeatherServiceImpl.class);
 
     @Override
-    public WeatherData getCityWeather(String city) {      
+    public WeatherData getCityWeather(String city) {   
         //http://apis.baidu.com/apistore/weatherservice/recentweathers?cityname={cityname}
         String httpUrl = System.getProperty("baiduweather.url");//"http://apis.baidu.com/apistore/weatherservice/recentweathers?";
         Map<String,String> params = new HashMap<String,String>();

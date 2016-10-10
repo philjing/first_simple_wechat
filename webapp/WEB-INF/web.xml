@@ -6,7 +6,7 @@
     <!-- 指定spring相关文件的位置 -->
     <context-param>
 	    <param-name>contextConfigLocation</param-name>
-	    <param-value>classpath:spring.xml</param-value>
+	    <param-value>classpath:spring.xml,,classpath:spring-hibernate.xml</param-value>
     </context-param>
 	
 	<!-- 配置字符集过滤器 -->

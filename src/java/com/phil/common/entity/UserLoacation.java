@@ -3,6 +3,8 @@ package com.phil.common.entity;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import com.phil.common.entity.base.IdEntity;
+
 /**
  * 用户地理位置
  * 
@@ -10,7 +12,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="user_location")
-public class UserLoacation {
+public class UserLoacation extends IdEntity {
 
 	/**
 	 * 用户的微信ID
