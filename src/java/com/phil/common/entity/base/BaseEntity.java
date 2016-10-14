@@ -26,6 +26,7 @@ public class BaseEntity implements Serializable {
 	@GenericGenerator(name = "paymentableGenerator", strategy = "uuid")
 	@Column(name ="id",nullable=false,length=32)  
 	protected String id;
+	
 	public String getId() {
 		return id;
 	}

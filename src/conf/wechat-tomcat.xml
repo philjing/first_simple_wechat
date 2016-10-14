@@ -1,0 +1,16 @@
+<Context className="org.apache.catalina.core.StandardContext" 
+	cachingAllowed="true" 
+	charsetMapperClass="org.apache.catalina.util.CharsetMapper" 
+	cookies="true" 
+	crossContext="false" 
+	debug="0" 
+	displayName="wechat" 
+	path="/wechat" 
+	docBase="D:\workspace\Wechat_Phase1\webapp"
+	mapperClass="org.apache.catalina.core.StandardContextMapper" 
+	privileged="false" 
+	reloadable="false" 
+	swallowOutput="false" 
+	useNaming="true"  
+	wrapperClass="org.apache.catalina.core.StandardWrapper">
+</Context>

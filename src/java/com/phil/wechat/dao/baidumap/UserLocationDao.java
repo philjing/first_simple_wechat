@@ -2,6 +2,11 @@ package com.phil.wechat.dao.baidumap;
 
 import com.phil.wechat.model.baidumap.UserLocation;
 
+/**
+ * 
+ * @author fjing
+ *
+ */
 public interface UserLocationDao {
 	
 	/**
